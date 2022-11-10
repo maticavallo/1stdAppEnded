@@ -1,4 +1,4 @@
-const ethers = require("ethers");
+/*const ethers = require("ethers");
 const {
   abi: contractAbi
 } = require("../artifacts/contracts/MarketSentiment.sol/MarketSentiment.json");
@@ -45,3 +45,4 @@ const marketSentimentContractAddr = process.argv[2];
 const tickerToPoll = process.argv[3];
 
 pollvotes(marketSentimentContractAddr, tickerToPoll);
+*/
