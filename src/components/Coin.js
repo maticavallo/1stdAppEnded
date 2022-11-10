@@ -1,4 +1,4 @@
-/*
+
 import React, { useEffect, useState } from "react";
 import "./Coin.css";
 import { Button } from "web3uikit";
@@ -6,7 +6,7 @@ const ethers = require("ethers");
 const  {
   abi: contractAbi
 } = require("../artifacts/contract/MarketSentiment.sol");
-/
+
 const dotEnv = require("dotenv");
 
 const rpcUrl = process.env.POLYGON_MUMBAI;
