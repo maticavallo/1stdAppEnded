@@ -12,7 +12,7 @@ const dotEnv = require("dotenv");
 const rpcUrl = process.env.POLYGON_MUMBAI;
 dotEnv.config();
 
-function Coin({ perc, getSentiment, pollvotes, setModalToken, setVisible }) {
+function Coin({ perc, getSentiment, pollvotes,}) {
   const [color, setColor] = useState();
   
   const { isAuthenticated} = pollvotes();
@@ -54,8 +54,6 @@ async function pollvotes(contractAddr, ticker) {
       console.log(`Current sentiment for ticker ${ticker} is ${sentimentText} with ${totalVotes.toString()} total votes`);
     }
   });
-
-  await new Promise(() => {});
 
 }
 
@@ -115,4 +113,3 @@ pollvotes(marketSentimentContractAddr, tickerToPoll);
 }
 
 export default Coin;
-*/
